@@ -15,7 +15,7 @@ var app 				= express();
 var local       		= true;
 
 // access Heroku variables
-var marketingCloud = {
+/*var marketingCloud = {
   authUrl: process.env.authUrl,
   clientId: process.env.clientId,
   clientSecret: process.env.clientSecret,
@@ -23,7 +23,7 @@ var marketingCloud = {
   promotionsListDataExtension: process.env.promotionsListDataExtension,
   offerTypesListDataExtension: process.env.offerTypesListDataExtension,
   insertDataExtension: process.env.insertDataExtension
-};
+};*/
 
 // Configure Express
 app.set('port', process.env.PORT || 3000);
