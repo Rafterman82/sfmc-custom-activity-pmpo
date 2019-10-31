@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+    margin: 0;
+}
+.step {
+    display: none;
+}
+#step0 {
+    display: block;
+}
+.slds-form-element__help {
+	display: none;
+}
+.summary-key {
+	color: #FF0000;
+}
+#summary-margin-top {
+	margin-top:20px;
+}

@@ -1,1 +1,0 @@
-# sfmc-jb-custom-event

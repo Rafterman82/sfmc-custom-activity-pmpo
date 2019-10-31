@@ -1,0 +1,89 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "iconSmall": "images/icon.png",
+        "category": "custom"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+          "name": "Associate Promotion",
+          "description": "Associate an promotion with part of a journey"
+        }
+    },
+    "arguments": {
+        "execute": {
+           "inArguments":[
+        {
+          "contactKey": "{{Contact.Key}}" 
+                }                 
+      ],
+          "outArguments": [],
+          "url": "https://mc-jb-custom-activity-ca.herokuapp.com/journeybuilder/execute",
+           "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+      "applicationExtensionKey": "e45a41ef-3e23-4570-b03e-1eeed3971201",
+      "save": {
+        "url": "https://mc-jb-custom-activity-ca.herokuapp.com/journeybuilder/save",
+          "verb": "POST",
+        "useJwt": true
+       },
+       "publish": {
+        "url": "https://mc-jb-custom-activity-ca.herokuapp.com/journeybuilder/publish",
+           "verb": "POST",
+        "useJwt": true
+       },
+      "stop": {
+        "url": "https://mc-jb-custom-activity-ca.herokuapp.com/journeybuilder/stop",
+           "verb": "POST",
+        "useJwt": true
+      },
+      "validate": {
+        "url": "https://mc-jb-custom-activity-ca.herokuapp.com/journeybuilder/validate",
+        "verb": "POST",
+        "useJwt": true
+      }
+    },
+    "wizardSteps": [{
+        "label": "Promotion Type",
+        "key": "step0"
+      },
+      {
+        "label": "Online Voucher Setup",
+        "key": "step1",
+        "active": false
+      },
+      {
+        "label": "Instore Voucher Setup",
+        "key": "step2",
+        "active": false
+      },
+      {
+        "label": "Summary",
+        "key": "step3"
+      }
+    ],
+   "userInterfaces": {
+      "configModal": {
+          "height": 200,
+          "width": 300,
+          "fullscreen": true
+      }
+   },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}
