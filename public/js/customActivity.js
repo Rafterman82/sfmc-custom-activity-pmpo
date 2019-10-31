@@ -12,9 +12,9 @@ define([
     var onlineSetupStepEnabled      = false;
     var instoreSetupStepEnabled     = false;
     var steps                       = [
-        { "label": "Promotion Type", "key": "step0" },
-        { "label": "Online Voucher Setup", "key": "step1", "active": false },
-        { "label": "Instore Voucher Setup", "key": "step2", "active": false },
+        { "label": "PUSH Type", "key": "step0" },
+        { "label": "Push Message Setup", "key": "step1", "active": false },
+        { "label": "Push Offer Setup", "key": "step2", "active": false },
         { "label": "Summary", "key": "step3" }
     ];
     var currentStep = steps[0].key;
@@ -506,17 +506,17 @@ define([
             if ( currentStep.key === 'step1' ) {
 
                 if ( validateFields('step1') ) {
-                    updateSummaryPage();
+                    //updateSummaryPage();
                     connection.trigger('nextStep');
                 }
 
             } else if ( currentStep.key === 'step3' ) {
 
                 console.log("save to de");
-                saveToDataExtension();
-                setTimeout(function() {
-                    save();
-                }, 3000);
+                //saveToDataExtension();
+                //setTimeout(function() {
+                //    save();
+                //}, 3000);
 
             } else {
 
@@ -529,17 +529,17 @@ define([
             if ( currentStep.key === 'step2' ) {
 
                 if ( validateFields('step2') ) {
-                    updateSummaryPage();
+                    //updateSummaryPage();
                     connection.trigger('nextStep');
                 }
 
             } else if ( currentStep.key === 'step3' ) {
 
                 console.log("save to de");
-                saveToDataExtension();
-                setTimeout(function() {
-                    save();
-                }, 3000);
+                //saveToDataExtension();
+                //setTimeout(function() {
+                //    save();
+                //}, 3000);
                 
 
             } else {
@@ -552,17 +552,17 @@ define([
             if ( currentStep.key === 'step2') {
 
                 if ( validateFields('step2') ) {
-                    updateSummaryPage();
+                    //updateSummaryPage();
                     connection.trigger('nextStep');
                 }
 
             } else if ( currentStep.key === 'step3' ) {
 
                 console.log("save to de");
-                saveToDataExtension();
-                setTimeout(function() {
-                    save();
-                }, 3000);
+                //saveToDataExtension();
+                //setTimeout(function() {
+                //    save();
+                //}, 3000);
 
             } else if ( currentStep.key === 'step1' ) {
                 if ( validateFields('step1') ) {
@@ -682,7 +682,7 @@ define([
         }
     }
 
-    function updateSummaryPage() {
+    /*function updateSummaryPage() {
 
          // main promo data
         var promotionType = $("#step0 .slds-radio input[name='promotionType']:checked").val();
@@ -834,9 +834,9 @@ define([
             $("#instoreKeySummary").html(mcUniquePromotionIdInstore);
         }      
        
-    }
+    }*/
 
-    function save() {
+    /*function save() {
 
          // main promo data
         var promotionType = $("#step0 .slds-radio input[name='promotionType']:checked").val();
@@ -1019,6 +1019,6 @@ define([
         if ( debug ) {
             console.log(payload); 
         }
-    }
+    }*/
 
 });
