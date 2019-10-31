@@ -40,7 +40,7 @@ if ('development' == app.get('env')) {
 
 // fetch rows from promotion metadata data extension
 // ensure communication cell code is unique
-app.get("/dataextension/lookup/offer_types", (req, res, next) => {
+/*app.get("/dataextension/lookup/offer_types", (req, res, next) => {
 	axios({
 		method: 'post',
 		url: marketingCloud.authUrl,
@@ -71,10 +71,10 @@ app.get("/dataextension/lookup/offer_types", (req, res, next) => {
 		console.dir(error);
 		return error;
 	});
-});
+});*/
 
 //Fetch rows from promotions data extension
-app.get("/dataextension/lookup/promotions", (req, res, next) => {
+/*app.get("/dataextension/lookup/promotions", (req, res, next) => {
 	axios({
 		method: 'post',
 		url: marketingCloud.authUrl,
@@ -105,7 +105,7 @@ app.get("/dataextension/lookup/promotions", (req, res, next) => {
 		console.dir(error);
 		return error;
 	});
-});
+});*/
 
 
 // insert data into data extension
