@@ -1,0 +1,27 @@
+{
+  "name": "sfmc-jb-custom-event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "customActivity.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafterman82/sfmc-jb-custom-event.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafterman82/sfmc-jb-custom-event/issues"
+  },
+  "homepage": "https://github.com/Rafterman82/sfmc-jb-custom-event#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "emojionearea": "^3.4.1",
+    "express": "^4.17.1",
+    "jquery.emojiarea.js": "^0.1.8-beta",
+    "requirejs": "^2.3.6"
+  }
+}
